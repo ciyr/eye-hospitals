@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eye Hospital Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-900">
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        World-Class <span class="text-blue-600">Eye Care</span> for Every Generation
+      </h1>
+      <p class="text-lg mb-6 text-gray-700">
+        Trusted by thousands across India, our specialty eye hospitals combine advanced technology with compassionate care.
+      </p>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-center gap-2 text-gray-800">✔ Expert Ophthalmologists</li>
+        <li class="flex items-center gap-2 text-gray-800">✔ Latest LASIK & Cataract Technology</li>
+        <li class="flex items-center gap-2 text-gray-800">✔ Accessible Across Multiple Cities</li>
+      </ul>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-2xl">
+        Book an Appointment
+      </button>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Get a Free Consultation</h2>
+      <form id="contactForm" class="space-y-4">
+        <input id="name" type="text" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-lg" />
+        <input id="phone" type="text" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg" />
+        <textarea id="message" placeholder="Tell us your concern (optional)" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-2xl font-semibold">
+          Request Callback
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Trust Signals -->
+  <section class="bg-blue-50 py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white rounded-2xl p-8 shadow">
+        <h3 class="text-lg font-medium">👁 500,000+ Patients Treated</h3>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow">
+        <h3 class="text-lg font-medium">✅ 95%+ Satisfaction Rate</h3>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow">
+        <h3 class="text-lg font-medium">🏥 20+ Hospitals Nationwide</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6">Your Vision, Our Mission</h2>
+    <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
+      Take the first step towards clearer vision. Book your consultation today and join thousands who trust us with their eyes.
+    </p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-2xl">
+      Book Now
+    </button>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+      alert(`Thank you, ${name}! We will contact you at ${phone}.`);
+    });
+  </script>
+</body>
+</html>
